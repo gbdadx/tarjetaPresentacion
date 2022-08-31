@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FrontCardPersonalGBD</title>
+    <script src="https://kit.fontawesome.com/b4287b73bf.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        #izquierda li {
+            list-style-type: none;
+            margin: 0;
+            padding: 5px;
+            line-height: 22px;
+        }
+        
+        #izquierda li:hover {}
+        
+        #contenedor {
+            display: flex;
+            padding: 10px;
+        }
+        
+        #izquierda {
+            width: 35%;
+            margin-left: 0px;
+            background-color: whitesmoke;
+            min-height: 100vh;
+            background-image: url(2V4t.gif);
+            background-size: cover;
+            padding: 20px;
+            text-align: left;
+            text-decoration: none;
+        }
+        
+        #derecha {
+            width: 65%;
+            background-image: url(wordcloud.png);
+            background-size: contain;
+            margin-right: 0px;
+            min-height: 100vh;
+            position: relative;
+            z-index: 3;
+        }
+        
+        #card {
+            border: 1px solid rgb(243, 240, 235);
+            border-radius: 10px;
+            width: 250px;
+            height: 150px;
+            text-align: center;
+            font-weight: bolder;
+            font-stretch: expanded;
+            padding: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: hsla(190, 38%, 87%, 0.75);
+        }
+        
+        #card:hover {
+            color: white;
+            background-color: lightseagreen;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        #card h1 {
+            font-size: 1.75rem;
+            padding: 5px;
+            padding-top: 10px;
+        }
+        
+        #card footer {
+            padding: 10px;
+            color: darkolivegreen;
+        }
+        
+        #art_1 {
+            height: 50%;
+        }
+        
+        #art_2 {
+            height: 25%;
+        }
+        
+        #art_3 {
+            height: 25%;
+        }
+        
+        @media screen and (max-width: 900px) {
+            aside {
+                font-size: smaller;
+            }
+        }
+        
+        @media screen and (max-width: 600px) {
+            aside {
+                display: none;
+            }
+            section {
+                float: none;
+                margin-left: 50px;
+                padding-left: 60px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main id="contenedor">
+        <aside id="izquierda">
+            <article id="art_1">
+                <h2>Formacion</h2>
+
+                <ul>
+                    <ul>
+                        <li>Perito Mercantil</li>
+                        <li>terciario</li>
+                        <li>universitario</li>
+                        <li>varios cursos de introduccion a la programacion, incluyendo cac</li>
+                        <li>Ingles, GCBA, nivel 7 (B1-2)</li>
+                        <li>armado y reparacion de Pcs, GCBA</li>
+                    </ul>
+            </article>
+            <article id="art_2">
+                <h2>Trabajos</h2>
+
+                <ul>
+                    <li>administrativa, bancos y otros</li>
+                    <li>otros</li>
+                </ul>
+            </article>
+            <article id="art_3">
+                <h2>Otros </h2>
+                <ul>
+                    <li>mascotas</li>
+                    <li>criptos</li>
+                    <li>internet</li>
+                </ul>
+            </article>
+            </ul>
+        </aside>
+        <section id="derecha">
+            <article id="card">
+                <header>
+                    <h1>Gabriela B. Diaz</h1>
+
+                </header>
+                <br>
+                <h3>IT student</h3><br>
+                <footer>
+
+                    <a href=" https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.github.com" target="_blank"><i class="fab fa-github"></i></a>
+                    <br>
+
+                    <p>&copy; 2022 GBD
+
+                </footer>
+
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
