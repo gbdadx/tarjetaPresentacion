@@ -70,11 +70,21 @@
             background-color: lightseagreen;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
-        
+        #card:hover a{
+            color: white;
+            background-color: lightseagreen;
+        }
         #card h1 {
             font-size: 1.75rem;
             padding:1rem;
             padding-top: 10px;
+        }
+        #linksmedia{
+            padding:1rem;
+            font-size:xx-large;
+        }
+        a{
+           color:lightseagreen; 
         }
         
         #card footer {
