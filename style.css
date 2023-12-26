@@ -1,0 +1,116 @@
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        #izquierda li {
+            list-style-type: none;
+            margin: 0;
+            line-height: 22px;
+        }
+        
+        #izquierda li:hover {}
+        
+        #contenedor {
+            display: flex;
+            padding: 2rem;
+        }
+        
+        #izquierda {
+            width: 35%;
+            margin-left: 0px;
+            background-color: whitesmoke;
+            min-height: 100vh;
+            background-image: url(2V4t.gif);
+            background-size: cover;
+            padding: 2rem;
+            text-align: left;
+            text-decoration: none;
+        }
+        
+        #derecha {
+            width: 65%;
+            background-image: url(wordcloud.png);
+            background-size: cover;
+            margin-right: 0px;
+            min-height: 100vh;
+            position: relative;
+            padding: 2rem;
+            z-index: 3;
+        }
+        article{
+            margin-bottom: 1rem;
+        }
+        article h2{
+            margin-bottom: 1.2rem;
+        }
+        #card {
+            border: 1px solid rgb(243, 240, 235);
+            border-radius: 10px;
+            width: 20rem;
+            height: fit-content;
+            text-align: center;
+            font-weight: bolder;
+            font-stretch: expanded;
+            padding: 1rem;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: hsla(190, 38%, 87%, 0.75);
+        }
+        
+        #card:hover {
+            color: white;
+            background-color: lightseagreen;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        #card h1 {
+            font-size: 1.75rem;
+            padding:1rem;
+            padding-top: 10px;
+        }
+        
+        #card footer {
+            padding: 1rem;
+           
+        }
+        
+        #art_1 {
+            height: 50%;
+        }
+        
+        #art_2 {
+            height: 25%;
+        }
+        
+        #art_3 {
+            height: 25%;
+        }
+        
+        
+        @media  (width < 600px) {
+            #contenedor{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                gap: 2rem;
+                margin:0rem;
+                padding:0%;
+            }
+            #izquierda {
+              display:none;
+            }
+            #derecha {
+                width: 100%;
+                padding-left: 3.75rem;
+            }
+        }
+  
